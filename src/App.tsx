@@ -1,12 +1,11 @@
-import { useState } from 'react';
 import './App.css';
 import TreeGraph from './TreeGraph';
 
 function App() {
   return (
-    <>
+    <div>
       <TreeGraph />
-    </>
+    </div>
   );
 }
 

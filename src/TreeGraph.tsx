@@ -20,20 +20,14 @@ const initialData: NodeType = {
           id: 'component-id-aggregation',
           group: 'component',
           children: [
-            {
-              id: 'component_accounts',
-              group: 'component',
-              children: [
-                { id: 'component-id-aggregation', group: 'component' },
-                { id: 'component-id-verification', group: 'component' },
-                { id: 'component-mds', group: 'component' },
-                { id: 'component-mgs-gateway', group: 'component' },
-                { id: 'component-navigator-cart', group: 'component' },
-                { id: 'component-navigator-link', group: 'component' },
-                { id: 'component-navigator-native', group: 'component' },
-                { id: 'component-navigator-oauth', group: 'component' },
-              ],
-            },
+            { id: 'component-id-aggregation', group: 'component' },
+            { id: 'component-id-verification', group: 'component' },
+            { id: 'component-mds', group: 'component' },
+            { id: 'component-mgs-gateway', group: 'component' },
+            { id: 'component-navigator-cart', group: 'component' },
+            { id: 'component-navigator-link', group: 'component' },
+            { id: 'component-navigator-native', group: 'component' },
+            { id: 'component-navigator-oauth', group: 'component' },
           ],
         },
         { id: 'component-id-verification', group: 'component' },
@@ -128,7 +122,7 @@ const TreeGraph: React.FC = () => {
       .text((d) => d.data.id.replace('component-', '').replace('group_', ''));
   }, [data]);
 
-  return <svg ref={svgRef} width='100vw' height='100vh' />;
+  return <svg ref={svgRef} width='100%' height='100%' />;
 };
 
 export default TreeGraph;
